@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Intern Stories - InAmigos Foundation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <a href="mailto:support@inamigosfoundation.org.in"><i class="fa-solid fa-envelope"></i> support@inamigosfoundation.org.in</a>
+                <span><i class="fa-solid fa-location-dot"></i> Chhattisgarh, India</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/inamigos.inamigos" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/inamigos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    <span class="brand-name">InAmigos</span>
+                    <span class="brand-sub">FOUNDATION</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="causes.html" class="nav-link">Causes</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="volunteers.html" class="nav-link">Volunteers</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button class="nav-btn" data-modal="donateModal"><i class="fa-solid fa-heart"></i> Donate Now</button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Blog & Intern Insights (#InAmigos)</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Blog</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-animate>
+                <span class="subtitle">Stories from the Field</span>
+                <h2>ARTICLES & CAMPAIGN HIGHLIGHTS</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Article 1 -->
+                <article style="background: var(--bg-white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);" data-animate>
+                    <div style="height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Content Writing Campaign" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px;">
+                        <span style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem;"><i class="fa-solid fa-hashtag"></i> #InAmigosCampaign</span>
+                        <h3 style="font-size: 1.3rem; margin: 10px 0;">How Content Writing & Media Drive Social Awareness</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Discover how our intern content writers use creative storytelling, social media campaigns, and visual graphics to spread awareness for food security and child welfare.</p>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article style="background: var(--bg-white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);" data-animate>
+                    <div style="height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Bachpanshala Impact" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px;">
+                        <span style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem;"><i class="fa-solid fa-graduation-cap"></i> Project Bachpanshala</span>
+                        <h3 style="font-size: 1.3rem; margin: 10px 0;">Transforming Young Lives Through Free Education</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">A deep dive into how evening learning centers and free school kits are empowering street children in Chhattisgarh to dream big.</p>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article style="background: var(--bg-white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);" data-animate>
+                    <div style="height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=600&q=80" alt="Project Jeev Care" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px;">
+                        <span style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem;"><i class="fa-solid fa-paw"></i> Project Jeev</span>
+                        <h3 style="font-size: 1.3rem; margin: 10px 0;">Compassion in Action: Rescuing Street Animals</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Learn about our weekly stray animal feeding drives, anti-rabies vaccination drives, and rescue stories led by young volunteers.</p>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Read Full Article</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>InAmigos Foundation</h3>
+                    <p>A Section 8 registered non-profit organization dedicated to food security, child education, animal welfare, women empowerment, environmental protection, and skill development across India.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="causes.html">Our Causes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-envelope"></i> <span>support@inamigosfoundation.org.in</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Base: Chhattisgarh, India</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="container"><p>&copy; 2026 InAmigos Foundation. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- Donate Modal -->
+    <div class="modal-overlay" id="donateModal">
+        <div class="modal-box">
+            <button class="modal-close">&times;</button>
+            <h3 style="font-size: 1.6rem; color: var(--secondary-color); margin-bottom: 10px;">Support InAmigos Foundation</h3>
+            <form class="ajax-form">
+                <div class="form-group"><label>Full Name</label><input type="text" class="form-control" required></div>
+                <div class="form-group"><label>Email Address</label><input type="email" class="form-control" required></div>
+                <div class="form-group"><label>Donation Amount (₹)</label><input type="number" class="form-control" required></div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Proceed to Donate</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

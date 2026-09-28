@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - InAmigos Foundation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <a href="mailto:support@inamigosfoundation.org.in"><i class="fa-solid fa-envelope"></i> support@inamigosfoundation.org.in</a>
+                <span><i class="fa-solid fa-location-dot"></i> Chhattisgarh, India</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/inamigos.inamigos" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/inamigos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    <span class="brand-name">InAmigos</span>
+                    <span class="brand-sub">FOUNDATION</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="causes.html" class="nav-link">Causes</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="volunteers.html" class="nav-link">Volunteers</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button class="nav-btn" data-modal="donateModal"><i class="fa-solid fa-heart"></i> Donate Now</button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Impact in Pictures</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Gallery</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-animate>
+                <span class="subtitle">Capturing Social Change</span>
+                <h2>PHOTO & CAMPAIGN GALLERY</h2>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filter" data-animate>
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="seva">Project Sewa</button>
+                <button class="filter-btn" data-filter="bachpan">Bachpanshala</button>
+                <button class="filter-btn" data-filter="jeev">Project Jeev</button>
+                <button class="filter-btn" data-filter="udaan">Project Udaan</button>
+                <button class="filter-btn" data-filter="prakriti">Project Prakriti</button>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="gallery-grid">
+                <!-- Photo 1: Sewa -->
+                <div class="gallery-item" data-category="seva" data-animate>
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Food Drive">
+                    <div class="gallery-overlay">
+                        <h4 style="color:#fff; margin-bottom: 5px;">Food Distribution Drive</h4>
+                        <p style="font-size: 0.82rem;">Project Sewa - Relief Kits</p>
+                    </div>
+                </div>
+
+                <!-- Photo 2: Bachpanshala -->
+                <div class="gallery-item" data-category="bachpan" data-animate>
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Child Class">
+                    <div class="gallery-overlay">
+                        <h4 style="color:#fff; margin-bottom: 5px;">Bachpanshala Classroom</h4>
+                        <p style="font-size: 0.82rem;">Child Literacy Session</p>
+                    </div>
+                </div>
+
+                <!-- Photo 3: Jeev -->
+                <div class="gallery-item" data-category="jeev" data-animate>
+                    <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=600&q=80" alt="Animal Rescue">
+                    <div class="gallery-overlay">
+                        <h4 style="color:#fff; margin-bottom: 5px;">Stray Dog Care & Feeding</h4>
+                        <p style="font-size: 0.82rem;">Project Jeev Animal Drive</p>
+                    </div>
+                </div>
+
+                <!-- Photo 4: Udaan -->
+                <div class="gallery-item" data-category="udaan" data-animate>
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Women Skill Workshop">
+                    <div class="gallery-overlay">
+                        <h4 style="color:#fff; margin-bottom: 5px;">Women Skill Training</h4>
+                        <p style="font-size: 0.82rem;">Project Udaan Sewing Center</p>
+                    </div>
+                </div>
+
+                <!-- Photo 5: Prakriti -->
+                <div class="gallery-item" data-category="prakriti" data-animate>
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Tree Plantation">
+                    <div class="gallery-overlay">
+                        <h4 style="color:#fff; margin-bottom: 5px;">Sapling Plantation</h4>
+                        <p style="font-size: 0.82rem;">Project Prakriti Environment</p>
+                    </div>
+                </div>
+
+                <!-- Photo 6: Sewa -->
+                <div class="gallery-item" data-category="seva" data-animate>
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=600&q=80" alt="Blanket Distribution">
+                    <div class="gallery-overlay">
+                        <h4 style="color:#fff; margin-bottom: 5px;">Winter Blanket Distribution</h4>
+                        <p style="font-size: 0.82rem;">Warmth for Needy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>InAmigos Foundation</h3>
+                    <p>A Section 8 registered non-profit organization dedicated to food security, child education, animal welfare, women empowerment, environmental protection, and skill development across India.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="causes.html">Our Causes</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-envelope"></i> <span>support@inamigosfoundation.org.in</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Base: Chhattisgarh, India</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="container"><p>&copy; 2026 InAmigos Foundation. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- Donate Modal -->
+    <div class="modal-overlay" id="donateModal">
+        <div class="modal-box">
+            <button class="modal-close">&times;</button>
+            <h3 style="font-size: 1.6rem; color: var(--secondary-color); margin-bottom: 10px;">Support InAmigos Foundation</h3>
+            <form class="ajax-form">
+                <div class="form-group"><label>Full Name</label><input type="text" class="form-control" required></div>
+                <div class="form-group"><label>Email Address</label><input type="email" class="form-control" required></div>
+                <div class="form-group"><label>Donation Amount (₹)</label><input type="number" class="form-control" required></div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Proceed to Donate</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

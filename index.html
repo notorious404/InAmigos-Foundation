@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InAmigos Foundation - Serving Humanity with Compassion</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <a href="mailto:support@inamigosfoundation.org.in"><i class="fa-solid fa-envelope"></i> support@inamigosfoundation.org.in</a>
+                <span><i class="fa-solid fa-location-dot"></i> Chhattisgarh, India</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/inamigos/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    <span class="brand-name">InAmigos</span>
+                    <span class="brand-sub">FOUNDATION</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="causes.html" class="nav-link">Causes</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="volunteers.html" class="nav-link">Volunteers</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button class="nav-btn" data-modal="donateModal"><i class="fa-solid fa-heart"></i> Donate Now</button></li>
+            </ul>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Slider -->
+    <section class="hero-slider">
+        <!-- Slide 1: Sewa -->
+        <div class="slide-item active" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1600&q=80');">
+            <div class="slide-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag">Project Sewa</span>
+                    <h1>Serving Humanity with Compassion</h1>
+                    <p>Providing essential food distribution, warm clothes, and relief kits to underprivileged communities across India.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-modal="donateModal">Support Our Cause</button>
+                        <a href="causes.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Explore Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Bachpanshala -->
+        <div class="slide-item" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80');">
+            <div class="slide-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag">Project Bachpanshala</span>
+                    <h1>Nurturing Young Minds, Building Bright Futures</h1>
+                    <p>Empowering children through quality education, learning materials, and mentorship programs for a better tomorrow.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-modal="volunteerModal">Join as Educator</button>
+                        <a href="about.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Udaan -->
+        <div class="slide-item" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1600&q=80');">
+            <div class="slide-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag">Project Udaan</span>
+                    <h1>Soaring Towards a Brighter Future</h1>
+                    <p>Enabling women empowerment through vocational skill training, financial literacy, and self-reliance initiatives.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-modal="donateModal">Support Women</button>
+                        <a href="causes.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">View Impact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Jeev -->
+        <div class="slide-item" style="background-image: url('https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=1600&q=80');">
+            <div class="slide-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag">Project Jeev</span>
+                    <h1>Empowering Lives, Spreading Compassion</h1>
+                    <p>Rescuing, medical care, and regular feeding drives for stray animals and street dogs across communities.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-modal="volunteerModal">Become a Caregiver</button>
+                        <a href="causes.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Jeev Initiative</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Controls -->
+        <div class="slider-arrows">
+            <button class="arrow-btn" id="prevSlide"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="arrow-btn" id="nextSlide"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Quick Action CTA Feature Bar -->
+    <section class="feature-cta-bar">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card" data-modal="donateModal">
+                    <div class="icon-box"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Donate Us</h3>
+                    <p>Make a difference with your donation today. 80G Tax-Exempt certified.</p>
+                </div>
+                <div class="feature-card" data-modal="volunteerModal">
+                    <div class="icon-box"><i class="fa-solid fa-hands-holding-child"></i></div>
+                    <h3>Become A Volunteer</h3>
+                    <p>Join us and be the change you wish to see in society.</p>
+                </div>
+                <div class="feature-card" data-modal="volunteerModal">
+                    <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+                    <h3>Join Us</h3>
+                    <p>Step in, stand out, and create a lasting social impact across India.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get To Know Us / About Section -->
+    <section class="about-area section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text" data-animate>
+                    <div class="section-title" style="text-align: left;">
+                        <span class="subtitle">About InAmigos Foundation</span>
+                        <h2>Get to Know Us Better</h2>
+                    </div>
+                    <p><strong>InAmigos Foundation</strong> was founded on September 23, 2020, by <strong>Mr. Govind Shukla</strong> (Founder & CEO). It is a Section 8 registered non-profit organization licensed by the Central Government, based in Chhattisgarh, India.</p>
+                    <p>It holds <strong>80G & 12A certifications</strong>, ensuring complete transparency, accountability, and tax-exempt benefits for all donors. Our foundation is also <strong>CSR-1 registered</strong> to partner with corporations, <strong>NITI Aayog registered</strong>, and holds the prestigious <strong>IAF ISO 9001:2015 certification</strong> for quality operations.</p>
+                    
+                    <div class="cert-badges">
+                        <span class="cert-badge"><i class="fa-solid fa-shield-halved"></i> Section 8 Registered</span>
+                        <span class="cert-badge"><i class="fa-solid fa-receipt"></i> 80G & 12A Certified</span>
+                        <span class="cert-badge"><i class="fa-solid fa-building-flag"></i> CSR-1 Registered</span>
+                        <span class="cert-badge"><i class="fa-solid fa-certificate"></i> ISO 9001:2015</span>
+                    </div>
+
+                    <a href="about.html" class="btn btn-primary" style="margin-top: 10px;">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="about-img-box" data-animate>
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80" alt="InAmigos Foundation Work">
+                    <div class="experience-badge">
+                        <div class="number">5+</div>
+                        <div class="text">Years of Impact & Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Core Causes Section -->
+    <section class="causes-area gray-bg section-padding">
+        <div class="container">
+            <div class="section-title" data-animate>
+                <span class="subtitle">Empowering Initiatives</span>
+                <h2>OUR CORE CAUSES</h2>
+            </div>
+
+            <div class="causes-grid">
+                <!-- Cause 1: Project Seva -->
+                <div class="cause-card" data-animate>
+                    <div class="cause-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Project Seva">
+                        <span class="cause-tag">Hunger & Relief</span>
+                    </div>
+                    <div class="cause-body">
+                        <h3>Project Seva</h3>
+                        <p>Providing freshly prepared nutritious food, clean water, and clothing drives to underprivileged families and destitute individuals.</p>
+                        <div class="cause-footer">
+                            <span style="font-weight: 600; color: var(--primary-color);"><i class="fa-solid fa-utensils"></i> Food & Essentials</span>
+                            <button class="btn btn-outline" style="padding: 6px 16px; font-size: 0.85rem;" data-modal="donateModal">Support</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 2: Project Bachpanshala -->
+                <div class="cause-card" data-animate>
+                    <div class="cause-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Project Bachpanshala">
+                        <span class="cause-tag">Education</span>
+                    </div>
+                    <div class="cause-body">
+                        <h3>Project Bachpanshala</h3>
+                        <p>Ensuring quality education, stationery kits, and interactive learning sessions for underprivileged children across 28 states.</p>
+                        <div class="cause-footer">
+                            <span style="font-weight: 600; color: var(--primary-color);"><i class="fa-solid fa-graduation-cap"></i> Child Literacy</span>
+                            <button class="btn btn-outline" style="padding: 6px 16px; font-size: 0.85rem;" data-modal="donateModal">Support</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 3: Project Jeev -->
+                <div class="cause-card" data-animate>
+                    <div class="cause-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=600&q=80" alt="Project Jeev">
+                        <span class="cause-tag">Animal Welfare</span>
+                    </div>
+                    <div class="cause-body">
+                        <h3>Project Jeev</h3>
+                        <p>Rescuing stray animals, providing medical treatment, rabies vaccinations, and daily feeding programs for street dogs.</p>
+                        <div class="cause-footer">
+                            <span style="font-weight: 600; color: var(--primary-color);"><i class="fa-solid fa-paw"></i> Animal Care</span>
+                            <button class="btn btn-outline" style="padding: 6px 16px; font-size: 0.85rem;" data-modal="donateModal">Support</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 4: Project Udaan -->
+                <div class="cause-card" data-animate>
+                    <div class="cause-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Project Udaan">
+                        <span class="cause-tag">Women Empowerment</span>
+                    </div>
+                    <div class="cause-body">
+                        <h3>Project Udaan</h3>
+                        <p>Empowering women from marginalized backgrounds through tailoring, digital literacy, financial independence, and health awareness.</p>
+                        <div class="cause-footer">
+                            <span style="font-weight: 600; color: var(--primary-color);"><i class="fa-solid fa-person-dress"></i> Empowerment</span>
+                            <button class="btn btn-outline" style="padding: 6px 16px; font-size: 0.85rem;" data-modal="donateModal">Support</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 5: Project Prakriti -->
+                <div class="cause-card" data-animate>
+                    <div class="cause-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Project Prakriti">
+                        <span class="cause-tag">Environment</span>
+                    </div>
+                    <div class="cause-body">
+                        <h3>Project Prakriti</h3>
+                        <p>Tree plantation campaigns, clean-up drives, plastic waste management, and spreading ecological awareness in communities.</p>
+                        <div class="cause-footer">
+                            <span style="font-weight: 600; color: var(--primary-color);"><i class="fa-solid fa-seedling"></i> Sustainability</span>
+                            <button class="btn btn-outline" style="padding: 6px 16px; font-size: 0.85rem;" data-modal="donateModal">Support</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 6: Project Vikas -->
+                <div class="cause-card" data-animate>
+                    <div class="cause-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Project Vikas">
+                        <span class="cause-tag">Skill Development</span>
+                    </div>
+                    <div class="cause-body">
+                        <h3>Project Vikas</h3>
+                        <p>Enhancing youth employability through career guidance workshops, soft skills training, and practical vocational internships.</p>
+                        <div class="cause-footer">
+                            <span style="font-weight: 600; color: var(--primary-color);"><i class="fa-solid fa-briefcase"></i> Skill Development</span>
+                            <button class="btn btn-outline" style="padding: 6px 16px; font-size: 0.85rem;" data-modal="donateModal">Support</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="causes.html" class="btn btn-primary">View All Projects Detailed <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Counter Banner -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-users-gear"></i></div>
+                    <div class="stat-number" data-target="200" data-plus="true">0</div>
+                    <div class="stat-title">OUR VOLUNTEERS</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class="stat-number" data-target="28" data-plus="false">0</div>
+                    <div class="stat-title">INDIAN STATES</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <div class="stat-number" data-target="6" data-plus="false">0</div>
+                    <div class="stat-title">CORE CAUSES</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                    <div class="stat-number" data-target="50000" data-plus="true">0</div>
+                    <div class="stat-title">BENEFICIARIES IMPACTED</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Preview Section -->
+    <section class="events-area section-padding">
+        <div class="container">
+            <div class="section-title" data-animate>
+                <span class="subtitle">Join Our Campaigns</span>
+                <h2>OUR EVENTS</h2>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card" data-animate>
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=600&q=80" alt="World Water Day 2025">
+                        <span class="event-category">Community</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date"><i class="fa-regular fa-calendar"></i> 22 March 2025</div>
+                        <h3>World Water Day 2025</h3>
+                        <p>Highlights the importance of water conservation and collective action to ensure clean water access for all communities.</p>
+                        <a href="events.html" class="btn btn-outline" style="width: 100%;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card" data-animate>
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1489710437720-eaa69803842b?auto=format&fit=crop&w=600&q=80" alt="International Day of Happiness 2025">
+                        <span class="event-category">Community</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date"><i class="fa-regular fa-calendar"></i> 20 March 2025</div>
+                        <h3>International Day of Happiness 2025</h3>
+                        <p>Spreading joy, positivity, and well-being through interactive child activities, games, and inspiring community discussions.</p>
+                        <a href="events.html" class="btn btn-outline" style="width: 100%;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card" data-animate>
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Women and Girls in Science 2025">
+                        <span class="event-category">Education</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date"><i class="fa-regular fa-calendar"></i> 11 February 2025</div>
+                        <h3>Women & Girls in Science 2025</h3>
+                        <p>Celebrating the achievements of female scholars and inspiring young girls to pursue STEM careers and innovation.</p>
+                        <a href="events.html" class="btn btn-outline" style="width: 100%;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteers Spotlight Preview -->
+    <section class="team-area gray-bg section-padding">
+        <div class="container">
+            <div class="section-title" data-animate>
+                <span class="subtitle">Passionate Change-makers</span>
+                <h2>OUR VOLUNTEERS</h2>
+            </div>
+
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="team-card" data-animate>
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Faiz Khan">
+                    </div>
+                    <div class="team-info">
+                        <h4>Faiz Khan</h4>
+                        <div class="role">Volunteer Supervisor</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Uttar Pradesh</div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-card" data-animate>
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Manavi Jaiswal">
+                    </div>
+                    <div class="team-info">
+                        <h4>Manavi Jaiswal</h4>
+                        <div class="role">Junior Volunteer Associate</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Chhattisgarh</div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-card" data-animate>
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Akash .">
+                    </div>
+                    <div class="team-info">
+                        <h4>Akash .</h4>
+                        <div class="role">Volunteer Associate</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> New Delhi</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="volunteers.html" class="btn btn-primary">Join Our Volunteer Team <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <div class="container">
+        <section class="cta-banner" data-animate>
+            <h2>Be the Change You Wish to See!</h2>
+            <p>Every small step creates a ripple of positive social impact. Support InAmigos Foundation today.</p>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <button class="btn btn-light" data-modal="donateModal"><i class="fa-solid fa-heart" style="color: var(--primary-color);"></i> Donate Now</button>
+                <button class="btn btn-outline" style="color:#fff; border-color:#fff;" data-modal="volunteerModal"><i class="fa-solid fa-hand-holding-hand"></i> Volunteer with Us</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>InAmigos Foundation</h3>
+                    <p>A Section 8 registered non-profit organization dedicated to food security, child education, animal welfare, women empowerment, environmental protection, and skill development across India.</p>
+                    <div class="social-links" style="display: flex; gap: 10px;">
+                        <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" style="color:#fff; background:rgba(255,255,255,0.1); padding:8px 12px; border-radius:50%;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/inamigos/" target="_blank" style="color:#fff; background:rgba(255,255,255,0.1); padding:8px 12px; border-radius:50%;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" style="color:#fff; background:rgba(255,255,255,0.1); padding:8px 12px; border-radius:50%;"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="causes.html">Our Causes</a></li>
+                        <li><a href="events.html">Events & Campaigns</a></li>
+                        <li><a href="volunteers.html">Volunteers</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="blog.html">Blog & Stories</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Core Projects</h4>
+                    <ul class="footer-links">
+                        <li><a href="causes.html">Project Sewa (Food & Relief)</a></li>
+                        <li><a href="causes.html">Project Bachpanshala (Education)</a></li>
+                        <li><a href="causes.html">Project Jeev (Animal Welfare)</a></li>
+                        <li><a href="causes.html">Project Udaan (Women Power)</a></li>
+                        <li><a href="causes.html">Project Prakriti (Environment)</a></li>
+                        <li><a href="causes.html">Project Vikas (Skills)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-envelope"></i> <span>support@inamigosfoundation.org.in</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Registered Base: Chhattisgarh, India</span></li>
+                        <li><i class="fa-solid fa-certificate"></i> <span>80G, 12A, CSR-1 & ISO 9001:2015 Certified</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container">
+                <p>&copy; 2026 InAmigos Foundation. All Rights Reserved. Designed for #InAmigos Awareness Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Donate Modal -->
+    <div class="modal-overlay" id="donateModal">
+        <div class="modal-box">
+            <button class="modal-close">&times;</button>
+            <h3 style="font-size: 1.6rem; color: var(--secondary-color); margin-bottom: 10px;">Support InAmigos Foundation</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Your contribution empowers food drives, child education, animal rescue & women empowerment. All donations are 80G tax-exempt.</p>
+            
+            <form class="ajax-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Select Cause to Support</label>
+                    <select class="form-control" required>
+                        <option value="">-- Choose Initiative --</option>
+                        <option>General Fund / Where Needed Most</option>
+                        <option>Project Sewa (Food & Relief)</option>
+                        <option>Project Bachpanshala (Child Education)</option>
+                        <option>Project Jeev (Animal Care & Feeding)</option>
+                        <option>Project Udaan (Women Empowerment)</option>
+                        <option>Project Prakriti (Environment)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Donation Amount (INR ₹)</label>
+                    <input type="number" class="form-control" placeholder="e.g. 500, 1000, 5000" min="100" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Proceed to Donate (Razorpay)</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Volunteer Modal -->
+    <div class="modal-overlay" id="volunteerModal">
+        <div class="modal-box">
+            <button class="modal-close">&times;</button>
+            <h3 style="font-size: 1.6rem; color: var(--secondary-color); margin-bottom: 10px;">Join #InAmigos Team</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Become a volunteer, intern, or content writer to make a real difference in society.</p>
+            
+            <form class="ajax-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label>State / Location</label>
+                    <input type="text" class="form-control" placeholder="e.g. Chhattisgarh, UP, Delhi" required>
+                </div>
+                <div class="form-group">
+                    <label>Role Interested In</label>
+                    <select class="form-control" required>
+                        <option value="">-- Choose Role --</option>
+                        <option>Field Volunteer</option>
+                        <option>Content Writer / Media</option>
+                        <option>Graphic Designer & Video Creator</option>
+                        <option>Event Coordinator</option>
+                        <option>Social Media Manager (#InAmigos)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
